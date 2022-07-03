@@ -16,6 +16,15 @@ html {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
 .title__heading {
   font-size: 20px;
   font-weight: 400;
@@ -24,7 +33,7 @@ html {
   color: #ff6600;
   display: block;
   margin-bottom: 0;
-  font-family: "Pacifico", cursive;
+  font-family: "Pacifico";
 }
 
 .title__text {
