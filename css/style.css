@@ -76,34 +76,33 @@ h6 {
   max-width: 800px;
 }
 
-.deliciousness__btn-left {
+.btn.btn-white {
   border: 2px solid #fff;
   margin-right: 24px;
 }
 
-.deliciousness__btn-left:hover {
+.btn.btn-white:hover {
   background: #fff;
   color: #ff6600;
 }
 
-.deliciousness__btn-right {
+.btn.btn-primary {
   background-color: #ff6600;
   border: 2px solid #ff6600;
 }
 
-.deliciousness__btn-right:hover {
+.btn.btn-primary:hover {
   color: #fff;
   opacity: 0.8;
 }
 
-.deliciousness__btn-left,
-.deliciousness__btn-right {
+.btn {
   color: #fff;
   line-height: 30px;
   font-weight: 700;
   transition: 0.3s ease-in;
   text-decoration: none;
-  padding: 17px 48px;
+  padding: 12px 45px;
   border-radius: 8px;
 }
 
