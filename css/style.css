@@ -16,6 +16,15 @@ html {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
 .title__heading {
   font-size: 20px;
   font-weight: 400;
@@ -24,7 +33,7 @@ html {
   color: #ff6600;
   display: block;
   margin-bottom: 0;
-  font-family: "Pacifico", cursive;
+  font-family: "Pacifico";
 }
 
 .title__text {
@@ -67,34 +76,33 @@ html {
   max-width: 800px;
 }
 
-.deliciousness__btn-left {
+.btn.btn-white {
   border: 2px solid #fff;
   margin-right: 24px;
 }
 
-.deliciousness__btn-left:hover {
+.btn.btn-white:hover {
   background: #fff;
   color: #ff6600;
 }
 
-.deliciousness__btn-right {
+.btn.btn-primary {
   background-color: #ff6600;
   border: 2px solid #ff6600;
 }
 
-.deliciousness__btn-right:hover {
+.btn.btn-primary:hover {
   color: #fff;
   opacity: 0.8;
 }
 
-.deliciousness__btn-left,
-.deliciousness__btn-right {
+.btn {
   color: #fff;
   line-height: 30px;
   font-weight: 700;
   transition: 0.3s ease-in;
   text-decoration: none;
-  padding: 17px 48px;
+  padding: 12px 45px;
   border-radius: 8px;
 }
 
@@ -346,11 +354,11 @@ html {
 .testimonials__body {
   margin-top: 50px;
   text-align: center;
-  font-style: italic;
   letter-spacing: 1px;
 }
 
 .testimonials__body h3 {
+  font-style: italic;
   font-size: 24px;
   line-height: 36px;
   color: #000;
