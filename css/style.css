@@ -25,6 +25,12 @@ h6 {
   font-family: "Quicksand", sans-serif;
 }
 
+p {
+  font-size: 18px;
+  color: #161c2db3;
+  font-family: 'Quicksand', sans-serif;
+}
+
 .title__heading {
   font-size: 20px;
   font-weight: 400;
