@@ -11,7 +11,7 @@ html {
 
 /* Comon */
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -23,6 +23,12 @@ h4,
 h5,
 h6 {
   font-family: "Quicksand", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  color: #161c2db3;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .title__heading {
