@@ -44,6 +44,10 @@ h1 a.logo-brand {
   color: #fff;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body a {
   cursor: pointer !important;
 }
