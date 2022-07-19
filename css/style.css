@@ -494,6 +494,91 @@ p {
 
 /* Agent-block */
 
+/* Categories */
+
+.w3l-res-categories {
+  background: #f7f7f7;
+}
+
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+}
+
+section {
+  display: block;
+}
+
+.w3l-res-categories .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.header-title{
+  display: block;
+}
+
+.title-subhny {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #ff6600;
+  display: block;
+  font-family: 'Pacifico', cursive;
+}
+
+.title-w3l h6 {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 2.33em;
+  margin-block-end: 2.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.title-w3l {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.title-w3l h3{
+    margin: 0;
+    padding: 0;
+    color: #232121;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title-w3l h3{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.res-categories-grids .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+
+
+/* Categories */
+
 /* Deliciousness */
 .deliciousness {
   background: url(../img/banner2.jpg) center / cover no-repeat;
@@ -954,3 +1039,4 @@ p {
 .copyright a:hover {
   color: #ff6600;
 }
+
