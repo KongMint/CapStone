@@ -1,0 +1,1317 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/email.css">
+    <title>Diner Restaurants</title>
+    <style>
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            background: #f1f1f1;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg_white {
+            background: var(--bg-color);
+        }
+
+        .bg_light {
+            background: var(--bg-light);
+        }
+
+        .bg_theme {
+            background: var(--primary-color);
+        }
+
+        .email-w3l-section {
+            padding: 3em 2em;
+        }
+
+        .bg_black {
+            background: var(--footer-bg);
+        }
+
+        .bg_dark {
+            background: var(--footer-bg);
+        }
+
+        /*BUTTON*/
+        .btn.eamil {
+            padding: 5px 15px;
+            display: inline-block;
+        }
+
+        table.scale-2s {
+            padding: 10px;
+            border-collapse: initial;
+        }
+
+        table h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--heading-color);
+            margin: 0;
+        }
+
+        table p {
+            font-size: 16px;
+            color: var(--font-color);
+            line-height: 28px;
+        }
+
+        .img-responsive {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*--vjm--*/
+        .vjm {
+            position: relative;
+            z-index: 0;
+        }
+
+        .overlay-banner {
+            background: rgba(0, 7, 10, 0.50);
+            z-index: 9;
+            padding: 2em 0;
+        }
+
+        .overlay-lavi {
+            background: rgb(0 7 10 / 66%);
+            z-index: 9;
+            padding: 2em 2em;
+        }
+
+        .footer-block {
+            z-index: 9;
+            padding: 2em 2em;
+        }
+
+        .vjm .text h2 {
+            color: #ffffff;
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+
+        .banner-bottom-gds {
+            padding: 0 2em;
+        }
+
+        .header-w3l-top {
+            padding: 0em 2em 1em 2em;
+        }
+
+        .email-sub-text {
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        td.sub-gd.img-ab {
+            padding-right: 2%;
+        }
+
+        .quick-links-email li {
+            list-style: none;
+        }
+
+        label.border-log {
+            border: 2px solid #fff;
+            border-right: 0;
+            padding-left: 4px;
+        }
+
+        /*--/headings--*/
+
+        h3.banner-title-email {
+            font-size: 26px;
+            line-height: 35px;
+        }
+
+        .heading-section-white {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        .heading-section-white h2 {
+            line-height: 1;
+            padding-bottom: 0;
+        }
+
+        .heading-section-white h2 {
+            color: #ffffff;
+        }
+
+        .quick-links-email {
+            text-align: right;
+        }
+
+        h3.name {
+            padding-top: 10px;
+        }
+
+        h3.name a {
+            color: var(--heading-color);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .heading-section h4 {
+            color: var(--heading-color);
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+
+        /*--//headings--*/
+        /*--services--*/
+        .services {
+            color: var(--heading-color);
+        }
+
+        .text-services .meta {
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        td.sub-gd.ab-gd {
+            padding: 0;
+            padding-right: 20px;
+        }
+
+        span.border-vw3l {
+            border-bottom: 4px solid var(--bg-grey);
+        }
+
+        .grid-w3l-top {
+            margin-top: 46px;
+        }
+
+        /*--services--*/
+
+        /*--footer--*/
+        .footer-emai-61 {
+            color: rgba(255, 255, 255, .5);
+
+        }
+
+        td.footer-gd {
+            padding-left: 5%;
+        }
+
+        .footer-emai-61 li a {
+            color: #828288;
+        }
+
+        a.w3l-icon-social {
+            display: inline-block;
+            width: 36px;
+            border: 2px solid #fff;
+            padding: 6px;
+            height: 36px;
+            border-radius: 6px;
+            margin-right: 6px;
+        }
+
+
+        @media screen and (max-width:640px) {
+            .vjm .text h2 {
+                font-size: 2em !important;
+                margin-bottom: 0;
+            }
+
+            .heading-section h3 {
+                font-size: 25px !important;
+            }
+
+            .heading-section h4 {
+                font-size: 18px !important;
+
+            }
+
+            .footer .heading {
+                font-size: 18px !important;
+            }
+
+            .email-w3l-section {
+                padding: 3em 2em;
+            }
+
+            td.sub-gd {
+                width: 100% !important;
+                display: block;
+            }
+
+            td.res-padd {
+                padding-top: 20px !important;
+            }
+
+            .sub-head-email .name-email {
+                margin: 0;
+                font-size: 0.9em;
+            }
+
+            .email-w3l-section.copy-right-w3l {
+                padding: 0.7em 1em;
+            }
+
+            td.mid-text {
+                text-align: left !important;
+            }
+
+            td.counter-gd.sub-gd table {
+                width: 49% !important;
+                float: left;
+                margin: 0 auto;
+            }
+
+            .overlay-lavi {
+                background: rgb(0 7 10 / 66%);
+                z-index: 9;
+                padding: 0em 0em;
+            }
+
+            .email-wrap-top {
+                margin-top: 50px !important;
+            }
+
+            .email-wrap-bottom {
+                margin-bottom: 50px !important;
+            }
+
+            h3.w3l-title {
+                margin-bottom: 16px !important;
+                font-size: 26px !important;
+                line-height: 36px;
+            }
+
+            td.mid-text h6 {
+                margin-bottom: 16px !important;
+                font-size: 26px !important;
+                line-height: 36px !important;
+            }
+
+            .grid-w3l-top {
+                margin-top: 36px !important;
+            }
+
+            .email-w3l-bann-content.email-w3l-section {
+                padding: 1em 0em;
+            }
+
+            h4.name-email-black {
+                font-size: 20px !important;
+                line-height: 30px;
+                text-align: left !important;
+            }
+
+            td.text-services.gd-sub-inf {
+                padding: 0 !important;
+                margin-bottom: 42px !important;
+            }
+
+            td.sub-gd.gd-sub-info-bottom {
+                margin-bottom: 35px;
+            }
+
+            table.social-icons-table {
+                width: 60% !important;
+            }
+
+            td.footer-gd {
+                padding-left: 5%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .footer-block {
+                padding: 2em 2em;
+            }
+
+            h3.banner-title-email {
+                font-size: 22px !important;
+                line-height: 35px;
+            }
+
+            .header-w3l-top {
+                padding: 2em 1em;
+            }
+
+            p.para-bottom {
+                padding: 0 !important;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            td.logo {
+                width: 100%;
+                float: left;
+                text-align: center !important;
+            }
+
+            td.logo.nav-top {
+                width: 100%;
+                float: left;
+            }
+
+            .icon {
+                text-align: left;
+            }
+
+            p.para {
+                text-align: left !important;
+            }
+        }
+
+        @media screen and (max-width:580px) {
+            table {
+                width: 100% !important;
+            }
+
+            h2.w3l-text-inf {
+                font-size: 26px !important;
+                line-height: 38px !important;
+            }
+        }
+
+        @media screen and (max-width:390px) {
+            h2.w3l-text-inf {
+                font-size: 22px !important;
+                line-height: 34px !important;
+            }
+        }
+    </style>
+    <!--//style -->
+</head>
+
+<body>
+    <script src="../../../../../../monetization.js" type="text/javascript"></script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+            }
+        })();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src='../../../../../../gtag/js.js?id=UA-149859901-1'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149859901-1');
+    </script>
+
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-149859901-1', 'demo.w3layouts.com');
+        ga('require', 'eventTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'urlChangeTracker');
+        ga('send', 'pageview');
+    </script>
+    <script async="" src='../../../../../../js/autotrack.js'></script>
+
+    <meta name="robots" content="noindex">
+
+    <body>
+        <link rel="stylesheet" href="../../../../../../assests/css/font-awesome.min.css">
+        <!-- New toolbar-->
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            }
+
+
+            #w3lDemoBar.w3l-demo-bar {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 9999;
+                padding: 40px 5px;
+                padding-top: 70px;
+                margin-bottom: 70px;
+                background: #0D1326;
+                border-top-left-radius: 9px;
+                border-bottom-left-radius: 9px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar a {
+                display: block;
+                color: #e6ebff;
+                text-decoration: none;
+                line-height: 24px;
+                opacity: .6;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            #w3lDemoBar.w3l-demo-bar span.w3l-icon {
+                display: block;
+            }
+
+            #w3lDemoBar.w3l-demo-bar a:hover {
+                opacity: 1;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+                color: #e6ebff;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .responsive-icons {
+                margin-top: 30px;
+                border-top: 1px solid #41414d;
+                padding-top: 40px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .demo-btns {
+                border-top: 1px solid #41414d;
+                padding-top: 30px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+                font-size: 26px;
+            }
+
+            #w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+                margin-bottom: 0;
+            }
+
+            .toggle-right-sidebar span {
+                background: #0D1326;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #e6ebff;
+                border-radius: 50px;
+                font-size: 26px;
+                cursor: pointer;
+                opacity: .5;
+            }
+
+            .pull-right {
+                float: right;
+                position: fixed;
+                right: 0px;
+                top: 70px;
+                width: 90px;
+                z-index: 99999;
+                text-align: center;
+            }
+
+            /* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+            #right-sidebar {
+                width: 90px;
+                position: fixed;
+                height: 100%;
+                z-index: 1000;
+                right: 0px;
+                top: 0;
+                margin-top: 60px;
+                -webkit-transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+                overflow-y: auto;
+            }
+
+
+            /* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+            .hide-right-bar-notifications {
+                margin-right: -300px !important;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+
+
+
+            @media (max-width: 992px) {
+                #w3lDemoBar.w3l-demo-bar a.desktop-mode {
+                    display: none;
+
+                }
+            }
+
+            @media (max-width: 767px) {
+                #w3lDemoBar.w3l-demo-bar a.tablet-mode {
+                    display: none;
+
+                }
+            }
+
+            @media (max-width: 568px) {
+                #w3lDemoBar.w3l-demo-bar a.mobile-mode {
+                    display: none;
+                }
+
+                #w3lDemoBar.w3l-demo-bar .responsive-icons {
+                    margin-top: 0px;
+                    border-top: none;
+                    padding-top: 0px;
+                }
+
+                #right-sidebar,
+                .pull-right {
+                    width: 90px;
+                }
+
+                #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile {
+                    margin-bottom: 0;
+                }
+            }
+        </style>
+        <div class="pull-right toggle-right-sidebar">
+            <span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
+        </div>
+
+        <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
+            <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+
+
+            </div>
+            <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003"
+                style="overflow: hidden; outline: none;">
+            </div>
+        </div>
+        </div>
+
+
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color:var(--bg-grey);">
+            <tr>
+                <td width="100%" align="center" valign="top">
+                    <table align="center" class="email-container email-wrap-top" role="presentation" cellspacing="0"
+                        cellpadding="0" border="0" width="650px" style="margin:100px auto 0;">
+                        <!-- start banner -->
+                        <tr>
+                            <td valign="middle" class="vjm bg_white"
+                                style="background-image: url(assets/images/banner1.jpg); background-size:cover;position:relative;background-position: center;">
+                                <div class="overlay-banner">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="bannert-w3l-top header-w3l-top">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0"
+                                                        border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="banner-w3l-top">
+
+                                                                    <table role="presentation" border="0"
+                                                                        cellpadding="10" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="left" width="50%" class=""
+                                                                                    style="padding-left:0;">
+                                                                                    <h1><a href="index-1.html"
+                                                                                            style="color:#fff;text-decoration:none;font-size:30px;font-weight:600;">Diner</a>
+                                                                                    </h1>
+
+                                                                                </td>
+
+                                                                                <td valign="right" width="50%" class="">
+
+                                                                                    <div class="quick-links-email">
+
+
+                                                                                        <a href="#"
+                                                                                            class="read-more btn"
+                                                                                            style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 20px;font-size: 16px;border-radius:6px;background:var(--primary-color);border:2px solid var(--primary-color);text-transform:capitalize;">
+                                                                                            Contact
+                                                                                        </a>
+
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="100%" align="left">
+                                                        <tr>
+                                                            <td class="email-w3l-bann-content email-w3l-section">
+                                                                <div class="ban-inner-content"
+                                                                    style="text-align:left; margin:0 auto;">
+
+                                                                    <h2 class="w3l-text-inf"
+                                                                        style="color:#fff;font-size:30px;
+                                     font-weight:bold;line-height:42px;text-transform:capitalize;text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.15);letter-spacing:1px;">
+                                                                        The Only Thing We Love<br> More Than Food Is
+                                                                        You!
+                                                                    </h2>
+                                                                    <p style="color:#fff;letter-spacing:1px;">Lorem
+                                                                        ipsum dolor sit amet consectetur ipsum
+                                                                        elit. </p>
+                                                                    <div class="ream-more-button"
+                                                                        style="display:inline-block;margin-top:30px;">
+                                                                        <a href="#" class="read-more btn"
+                                                                            style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 30px;font-size: 16px;border-radius:6px;background:transparent;border:2px solid#fff;text-transform:capitalize;">
+                                                                            Read More
+                                                                        </a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- end-banner -->
+                    </table>
+
+                    <!-- end banner -->
+                </td>
+            </tr>
+            <!--end grid -->
+        </table>
+        <!--/banner-bottom-->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color:var(--bg-grey);">
+            <tr>
+                <td width="100%" align="center" valign="top">
+                    <table align="center" class="email-container" role="presentation" cellspacing="0" cellpadding="0"
+                        border="0" width="650px" style="margin:0 auto;">
+                        <!--start grid -->
+                        <tr>
+                            <td class="bg_white email-w3l-section" style="width: 100%;">
+
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="left" width="40%" class="sub-gd">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                    width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h3 class="banner-title-email"
+                                                                    style="color:var(--heading-color);">
+                                                                    We found our creative space that is open for you.
+                                                                </h3>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td valign="right" width="60%" class="sub-gd">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                    width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-services gd-sub-inf"
+                                                                style="text-align: left; padding-left:25px;">
+                                                                <div class="heading-section">
+                                                                    <p class="para" style="margin:10px 0 20px 0;">
+                                                                        Integer pulvinar leo id viverra
+                                                                        feugiat. Pellen tesque libero ut justo, ultrices
+                                                                        in ligula proident suscipit.Pellen tesque libero
+                                                                        ut justo, ultrices
+                                                                        in ligula proident suscipit.
+                                                                    </p>
+                                                                    <p class="para" style="margin:10px 0 20px 0;">
+                                                                        Integer pulvinar leo id viverra
+                                                                        feugiat. Pellen tesque libero ut justo, ultrices
+                                                                        in ligula proident suscipit.
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--end grid -->
+                    </table>
+                    <!-- end banner -->
+                </td>
+            </tr>
+            <!--end grid -->
+        </table>
+        <!--//banner-bottom-->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color:var(--bg-grey);">
+            <tr>
+                <td width="100%" align="center" valign="top">
+                    <table align="center" class="email-container" role="presentation" cellspacing="0" cellpadding="0"
+                        border="0" width="650px" style="margin:0 auto;">
+                        <!--start grid -->
+                        <tr>
+                            <td class="bg_white email-w3l-section" style="width: 100%;">
+                                <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                                    class="services-top">
+                                    <tbody>
+                                        <tr>
+
+                                            <td>
+
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                    class="scale-25" width="100%">
+                                                    <tbody>
+                                                        <div class="heading-section"
+                                                            style="text-align:center;margin-bottom:30px;">
+                                                            <h3
+                                                                style=" color:var(--heading-color);font-size:32px;font-weight:bold;">
+                                                                Popular Categories</h3>
+                                                        </div>
+                                                        <tr>
+                                                            <td>
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                    cellspacing="0" class="scale-2s" width="32%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="scale-center-both" height="100"
+                                                                                style="text-align: center;"><a
+                                                                                    href="#team"><img
+                                                                                        src="assets/images/g1.jpg"
+                                                                                        class="radius-image"
+                                                                                        style="width: 100%;"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="#team"
+                                                                                    style="text-align:center; line-height:16px;font-weight:bold; text-decoration:none;font-size:18px; color: var(--heading-color);">
+                                                                                    &nbsp; Vegetarian</a>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                    cellspacing="0" class="scale-2s" width="32%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="scale-center-both" height="100"
+                                                                                style="text-align: center;"><a
+                                                                                    href="#team"><img
+                                                                                        src="assets/images/g2.jpg"
+                                                                                        class="radius-image"
+                                                                                        style="width: 100%;"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="#team"
+                                                                                    style="text-align: center; line-height:16px; text-decoration:none; font-size:18px;font-weight:bold; color: var(--heading-color);">
+                                                                                    &nbsp; Drinks</a>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                    cellspacing="0" class="scale-2s" width="32%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="scale-center-both" height="100"
+                                                                                style="text-align: center;"><a
+                                                                                    href="#team"><img
+                                                                                        src="assets/images/g3.jpg"
+                                                                                        class="radius-image"
+                                                                                        style="width: 100%;"></a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="#team"
+                                                                                    style="text-align: center; line-height:16px; text-decoration:none;font-weight:bold; font-size:18px; color: var(--heading-color);">
+                                                                                    &nbsp; Lunch</a>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="10">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                    cellspacing="0" class="scale-2s" width="32%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="scale-center-both" height="100"
+                                                                                style="text-align: center;"><a
+                                                                                    href="#team"><img
+                                                                                        src="assets/images/g4.jpg"
+                                                                                        class="radius-image"
+                                                                                        style="width: 100%;"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="#team"
+                                                                                    style="text-align:center; line-height:16px;font-weight:bold; text-decoration:none;font-size:18px; color: var(--heading-color);">
+                                                                                    &nbsp; Bakery</a>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                    cellspacing="0" class="scale-2s" width="32%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="scale-center-both" height="100"
+                                                                                style="text-align: center;"><a
+                                                                                    href="#team"><img
+                                                                                        src="assets/images/g5.jpg"
+                                                                                        class="radius-image"
+                                                                                        style="width: 100%;"></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="#team"
+                                                                                    style="text-align: center; line-height:16px; text-decoration:none; font-size:18px;font-weight:bold; color: var(--heading-color);">
+                                                                                    &nbsp; Desserts</a>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                    cellspacing="0" class="scale-2s" width="32%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="scale-center-both" height="100"
+                                                                                style="text-align: center;"><a
+                                                                                    href="#team"><img
+                                                                                        src="assets/images/g6.jpg"
+                                                                                        class="radius-image"
+                                                                                        style="width: 100%;"></a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="10">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <a href="#team"
+                                                                                    style="text-align: center; line-height:16px; text-decoration:none;font-weight:bold; font-size:18px; color: var(--heading-color);">
+                                                                                    &nbsp; Pizza</a>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <!--end grid -->
+                    </table>
+                    <!-- end banner -->
+                </td>
+            </tr>
+            <!--end grid -->
+        </table>
+        <!--//banner-bottom-->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color:var(--bg-grey);">
+            <tr>
+                <td width="100%" align="center" valign="top">
+                    <table align="center" class="email-container" role="presentation" cellspacing="0" cellpadding="0"
+                        border="0" width="650px" style="margin:0 auto;">
+                        <!--start grid -->
+                        <tr>
+                            <td class="bg_light email-w3l-section" style="width:100%;">
+                                <!--/grid1-->
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td valign="left" width="50%" class="sub-gd">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <img class="img-responsive" src="assets/images/g1.jpg" alt=""
+                                                            style="height: auto; margin:0 auto 1em; display: block;width:100%">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td valign="right" width="50%" class="sub-gd">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td class="text-services gd-sub-inf"
+                                                        style="text-align: left; padding-left:25px;">
+                                                        <div class="heading-section">
+                                                            <h4>Come and celebrate
+                                                                the wonderful
+                                                                Christmas <span class="border-vw3l">Party</span>
+                                                            </h4>
+                                                            <p class="para" style="margin:10px 0 20px 0;">
+                                                                Integer pulvinar leo id viverra
+                                                                feugiat. Pellen tesque libero ut justo, ultrices
+                                                                in ligula proident suscipit.
+                                                            </p>
+                                                            <div class="ream-more-button" style="display:inline-block">
+                                                                <a href="#" class="read-more btn btn-style btn-primary"
+                                                                    style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 30px;font-size: 16px;border-radius:6px;text-transform:capitalize;">
+                                                                    Read More
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                <!--//grid1-->
+                                <!--/grid2-->
+                                <table class="grid-w3l-top" role="presentation" border="0" cellpadding="0"
+                                    cellspacing="0" width="100%">
+                                    <tr>
+
+                                        <td valign="left" width="50%" class="sub-gd  gd-sub-info-bottom">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td class="text-services gd-sub-inf"
+                                                        style="text-align: left; padding-right:0px;">
+                                                        <div class="heading-section">
+                                                            <h4>Create Christmas Magic & Get more <span
+                                                                    class="border-vw3l">Gifts</span></h4>
+                                                            <p class="para" style="margin:10px 0 20px 0;">
+                                                                Integer pulvinar leo id viverra
+                                                                feugiat. Pellen tesque libero ut justo, ultrices
+                                                                in ligula proident suscipit.
+                                                            </p>
+                                                            <div class="ream-more-button" style="display:inline-block">
+                                                                <a href="#" class="read-more btn btn-style btn-primary"
+                                                                    style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 30px;font-size: 16px;border-radius:6px;text-transform:capitalize;">
+                                                                    Read More
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </td>
+
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td valign="right" width="50%" class="sub-gd">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <img class="img-responsive" src="assets/images/g2.jpg" alt=""
+                                                            style="height: auto; margin:0 auto 1em; display: block;width:100%">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                    </tr>
+
+                                </table>
+                                <!--//grid2-->
+                            </td>
+                        </tr>
+                        <!--end grid -->
+                    </table>
+                    <!-- end banner -->
+                </td>
+            </tr>
+            <!--end grid -->
+        </table>
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color:var(--bg-grey);">
+            <tr>
+                <td width="100%" align="center" valign="top">
+                    <table align="center" class="email-container" role="presentation" cellspacing="0" cellpadding="0"
+                        border="0" width="650px" style="margin:0px auto 0;">
+                        <!-- start banner -->
+                        <tr>
+                            <td valign="middle" class="vjm bg_white"
+                                style="background-image: url(assets/images/banner2.jpg); background-size:cover;position:relative;background-position: center;">
+                                <div class="overlay-lavi">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="center" width="100%" class="copy-gd email-w3l-section"
+                                                    style="text-align:left;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0"
+                                                        border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="text-align:center;" class="mid-text">
+
+                                                                    <h6 style="color:#fff;font-size:38px;
+                                                    line-height:48px;margin:20px 0 30px 0;">Deliciousness jumping into
+                                                                        the mouth.
+
+                                                                    </h6>
+                                                                    <p class="para"
+                                                                        style="margin:10px 0 30px 0;text-align:center; color:#fff;">
+                                                                        Integer pulvinar leo id viverra
+                                                                        feugiat. Pellen tesque libero ut justo, ultrices
+                                                                        in ligula proident suscipit.
+                                                                    </p>
+                                                                    <div class="ream-more-button"
+                                                                        style="display:inline-block">
+                                                                        <a href="#" class="read-more btn"
+                                                                            style="color:#fff;text-decoration:none;font-weight:600;display:inline-block;padding:10px 30px;font-size: 16px;border-radius:6px;background:transparent;border:2px solid#fff;text-transform:capitalize;">
+                                                                            Order Now
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    .
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- end-banner -->
+                    </table>
+                    <!-- end banner -->
+                </td>
+            </tr>
+            <!--end grid -->
+        </table>
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color:var(--bg-grey);">
+            <tr>
+                <td width="100%" align="center" valign="top">
+                    <table align="center" class="email-container" role="presentation" cellspacing="0" cellpadding="0"
+                        border="0" width="650px" style="margin:0px auto 0;">
+                        <!-- start banner -->
+                        <tr>
+                            <td valign="middle" class="bg_white email-w3l-section">
+
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td style="text-align:center;" class="mid-text">
+                                                <div class="mainw3l-img" style="padding-top:20px;">
+                                                    <img class="radius-image" src="assets/images/banner3.jpg" alt=""
+                                                        style="height: auto; margin:0 auto 1em; display: block;width:100%">
+                                                </div>
+                                                <h6 style="color:var(--heading-color);font-size:30px;
+                                            line-height:48px;margin:30px 0 20px 0;font-weight:bold;">Deliciousness
+                                                    jumping into the mouth.
+
+                                                </h6>
+                                                <p class="para"
+                                                    style="margin:0px 0 30px 0;text-align:center; color:var(--font-color);">
+                                                    Integer pulvinar leo id viverra
+                                                    feugiat. Pellen tesque libero ut justo, ultrices
+                                                    in ligula proident suscipit.
+                                                </p>
+                                                <div class="ream-more-button" style="display:inline-block">
+                                                    <a href="#" class="read-more btn"
+                                                        style="text-decoration:none;color:#fff;font-weight:600;display:inline-block;padding:10px 30px;font-size: 16px;border-radius:6px;background:var(--primary-color);border:2px solid var(--primary-color);text-transform:capitalize;">
+                                                        Read More
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- end-banner -->
+
+                    </table>
+                    <!-- end banner -->
+                </td>
+            </tr>
+            <!--end grid -->
+        </table>
+        <!-- start-footer -->
+        <table align="center" class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0"
+            width="650px" style="margin:0px auto 80px;background-color:var(--footer-bg);">
+            <tr>
+                <td>
+                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                        style="margin:0 auto;">
+                        <tr>
+                            <td valign="middle" class="footer email-w3l-section">
+                                <table>
+                                    <tr>
+                                        <td valign="top" width="50%" class="footer-gd sub-gd">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td style="text-align: left; padding-right: 10px;">
+                                                        <h3 class="heading" style="color:#fff;font-size:22px;">About Us
+                                                        </h3>
+                                                        <p style="color:#a0a0a0; margin:10px 0;">Lorem ipsum dolor sit
+                                                            amet,
+                                                            consectetur adipiscing elit.
+                                                            Mauris blandit odio at sodales aliquet.</p>
+                                                        <p><a href="#" style="color: #7d7c7c;"
+                                                                class="unsub-text">Unsubcribe</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td valign="top" width="50%" class="footer-gd sub-gd">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td class="res-padd"
+                                                        style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                                                        <h3 class="heading" style="color:#fff; font-size:22px;">Contact
+                                                            Info</h3>
+                                                        <div class="adress-list" style="margin:15px 0;">
+                                                            <h4 class="sub-title-2"
+                                                                style="color:#eee;margin-bottom:0px;font-size:1em;font-weight:400;">
+                                                                Our Address</h4>
+                                                            <p style="margin:5px 0; color:#a0a0a0">London, 235 Terry,
+                                                                10001, 32
+                                                                South, Harley Street, F - 367</p>
+                                                        </div>
+                                                        <div class="adress-list" style="margin:15px 0;">
+                                                            <h4 class="sub-title-2"
+                                                                style="color:#fff;margin-bottom:0px;font-size:1em;font-weight:400;">
+                                                                Call Us</h4>
+                                                            <p style="margin:5px 0;color:#a0a0a0">+1(21) 234 4567</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle"
+                                style="padding:12px 0;background-color:var(--footer-bg);border-top:1px solid #222;"
+                                class="footer copy-right-hny">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td valign="center" width="100%" class="copy-gd" style="text-align:center;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td style="text-align:cneter;">
+                                                        <p class="copy-right" style="color:#fff;">&copy; 2021 Diner. All
+                                                            rights reserved | Design
+                                                            by
+                                                            <a href="../../../../../../index.htm" style="color:#fff;"
+                                                                class="link-cory-right" target="_blank">W3layouts</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- Template JavaScript -->
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/theme-change.js"></script>
+        <!-- owl carousel -->
+        <script src="assets/js/owl.carousel.js"></script>
+        <!-- script for tesimonials carousel slider -->
+
+    </body>
+
+</body>
+
+</html>
